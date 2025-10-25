@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israel Zacarías Sanchez">
+    <meta name="date" content="06/10/2025">
+    <meta name="description" content="Sitio de fans de Hans Zimmer con videos, noticias, música y próximos eventos.">
+    <meta name="keywords" content="Hans Zimmer, música, bandas sonoras, conciertos, noticias, Israel Zacarias Sanchez, desarrollador web">
+    <link rel="icon" href="Image/logo.ico" type="image/x-icon">
+   <link rel="stylesheet" href="CSS/estilo.css">
+    <title >Hans Zimmer</title>
+   </head>
+   <body class="pagina-inicio">
+   <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+            <header class="site-header">
+               <nav class="navbar" aria-label="Navegación principal">
+                  <a class="logo" href="Principal.html" aria-label="Ir a inicio">
+                     <img src="Image/logo.ico" alt="Logo" />
+                  </a>
+                  <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
+                  <ul id="menu" class="nav-links">
+                     <li><a class="active" href="Principal.html">Inicio</a></li>
+                     <li><a href="biografia.html">Biografía</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                     <li><a href="discografia.html">Discografía</a></li>
+                     <li><a href="info-del-desarrollador.html">Desarrollador</a></li>
+                  </ul>
+               </nav>
+               <section class="hero hero-redesign zoom-lento hero-centro" role="banner" style="--hero-img: url('Image/orques1.jpg');">
+                  <picture class="hero-bg" aria-hidden="true">
+                     <source srcset="Image/hans-zimmer-collab-hero.avif" type="image/avif" />
+                     <img src="Image/orques1.jpg" alt="" loading="eager" decoding="async" />
+                  </picture>
+                  <div class="hero-inner">
+                     <h1>Hans Zimmer Live</h1>
+                     <p class="lead">Sonoridades cinematográficas, texturas híbridas y emociones expansivas. Explora música, giras y proyectos del compositor que redefinió la banda sonora moderna.</p>
+                     <div class="acciones-hero">
+                        <a href="#video" class="btn primario" aria-label="Ir al video reciente">Ver Último Video</a>
+                     </div>
+                  </div>
+               </section>
+            </header>
+            <main id="contenido-principal">
+               <section id="video" class="seccion video" aria-labelledby="tit-video">
+                  <h2 id="tit-video">Video Más Reciente</h2>
+                  <div class="media-wrapper ratio-6x9">
+                     <video controls preload="metadata" poster="Image/1-8.jpg" style="width:100%;height:100%;object-fit:cover;">
+                        <source src="Video/Hans Zimmer - Interstellar  Imperial Orchestra.mp4" type="video/mp4" />
+                        Tu navegador no soporta video HTML5.
+                     </video>
+                  </div>
+               </section>
+
+               <section class="seccion musica" aria-labelledby="tit-musica">
+                  <h2 id="tit-musica">Canción Más Exitosa</h2>
+                  <div class="spotify-wrapper">
+                     <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/6pWgRkpqVfxnj3WuIcJ7WP?utm_source=generator&theme=0" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Reproductor Spotify"></iframe>
+                  </div>
+               </section>
+
+               <section class="seccion noticias" aria-labelledby="tit-noticias">
+                     <h2 id="tit-noticias">Noticias</h2>
+                     <ul class="lista-noticias">
+                        <li>
+                           <a href="noticia-tour-2025.html" aria-label="Leer: Nuevo Tour Internacional 2025">
+                              <article>
+                                 <h3>Nuevo Tour Internacional 2025</h3>
+                                 <p>Se anuncian nuevas fechas para Europa y América Latina.</p>
+                                 <time datetime="2025-10-01">01 Oct 2025</time>
+                              </article>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="noticia-bso-galardonada.html" aria-label="Leer: Banda Sonora Galardonada">
+                              <article>
+                                 <h3>Banda Sonora Galardonada</h3>
+                                 <p>La última banda sonora gana premios a mejor composición.</p>
+                                 <time datetime="2025-09-25">25 Sep 2025</time>
+                              </article>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="noticia-colaboracion-sorpresa.html" aria-label="Leer: Colaboración Sorpresa">
+                              <article>
+                                 <h3>Colaboración Sorpresa</h3>
+                                 <p>Se confirma colaboración con una orquesta sinfónica de renombre.</p>
+                                 <time datetime="2025-09-10">10 Sep 2025</time>
+                              </article>
+                           </a>
+                        </li>
+                     </ul>
+               </section>
+               <section class="seccion desarrollador" aria-labelledby="tit-desarrollador">
+                  <h2 id="tit-desarrollador">Conoce al desarrollador</h2>
+                  <p>Conoce a Israel Zacarias Sanchez, estudiante de 17 años del CBTis 142 que busca crecer contigo en proyectos de software.</p>
+                  <div class="acciones-hero">
+                     <a href="info-del-desarrollador.html" class="btn primario">Ver perfil de Israel</a>
+                  </div>
+               </section>
+            </main>
+
+            <footer class="site-footer">
+               <p>&copy; 2025 Sitio de Fans de Hans Zimmer por Israel Z.S.</p>
+               <a href="#contenido-principal" class="volver-arriba" aria-label="Volver al inicio">↑</a>
+            </footer>
+            
+            <audio id="intro-audio" preload="auto" autoplay playsinline style="display:none;" aria-label="Introducción sonora del sitio (25 segundos)">
+               <source src="Audio/intro-audio.mp3" type="audio/mpeg" />
+            </audio>
+            <div id="intro-audio-fallback" class="intro-audio-fallback" style="display:none;">
+               <button type="button" id="play-intro" class="btn secundario btn-intro-audio">Reproducir Intro</button>
+            </div>
+      <script src="JS/app.js" defer></script>
+   </body>
+</html>

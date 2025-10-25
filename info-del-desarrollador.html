@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israel Zacarias Sanchez">
+    <meta name="date" content="24/10/2025">
+    <meta name="description" content="Perfil del desarrollador Israel Zacarias Sanchez, estudiante de programación en CBTis 142.">
+    <meta name="keywords" content="Israel Zacarias Sanchez, CBTis 142, estudiante de programación, desarrollador web, proyectos escolares">
+    <link rel="icon" href="Image/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Sobre el desarrollador</title>
+ </head>
+ <body class="pagina-secundaria">
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+  <header class="site-header">
+   <nav class="navbar" aria-label="Navegación principal">
+    <a class="logo" href="Principal.html" aria-label="Ir a inicio">
+     <img src="Image/logo.ico" alt="Logo">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
+    <ul id="menu" class="nav-links">
+     <li><a href="Principal.html">Inicio</a></li>
+     <li><a href="biografia.html">Biografía</a></li>
+     <li><a href="contacto.html">Contacto</a></li>
+     <li><a href="discografia.html">Discografía</a></li>
+     <li><a class="active" href="info-del-desarrollador.html">Desarrollador</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main id="contenido-principal">
+   <section class="hero hero-redesign hero-centro" role="banner" style="--hero-img: url('Image/pexels-njeromin-13392283.jpg');">
+    <picture class="hero-bg" aria-hidden="true">
+     <img src="Image/pexels-njeromin-13392283.jpg" alt="" loading="eager" decoding="async">
+    </picture>
+    <div class="hero-inner">
+     <h1>Hola, soy Israel Zacarias Sanchez</h1>
+     <p>Estudiante de 17 años en el CBTis 142 con entusiasmo por el desarrollo de software y la colaboración creativa.</p>
+     <div class="acciones-hero">
+      <a class="btn primario" href="Principal.html">Volver al sitio principal</a>
+     </div>
+    </div>
+   </section>
+   <section class="seccion perfil">
+    <figure class="foto-desarrollador">
+     <img src="Image/isra.jpg" alt="Retrato de Israel Zacarias Sanchez" loading="lazy" decoding="async">
+     <figcaption>Israel Zacarias Sanchez - Estudiante del CBTis 142.</figcaption>
+    </figure>
+    <article>
+     <h2>Trayectoria</h2>
+     <p>Actualmente curso la especialidad de programación en el CBTis 142, enfocándome en bases sólidas de lógica, estructuras de datos y diseño responsivo. Aunque aún no participo en proyectos formales, desarrollo miniaplicaciones y prácticas guiadas para afianzar conceptos.</p>
+     <ul>
+      <li>Resolución de ejercicios con HTML, CSS y JavaScript para reforzar fundamentos.</li>
+      <li>Aprendizaje autodidacta de Git y control de versiones para trabajo en equipo.</li>
+      <li>Exploración de metodologías ágiles y documentación clara para futuros proyectos.</li>
+     </ul>
+    </article>
+   </section>
+   <section class="seccion enfoque">
+    <h2>Enfoque actual</h2>
+    <p>Busco colaborar contigo para convertir ideas en experiencias web accesibles y escalables, mientras continúo aprendiendo de cada reto técnico. Me motiva experimentar, recibir retroalimentación y construir un portafolio sólido desde cero.</p>
+    <div class="acciones-hero">
+     <a class="btn secundario" href="hablemos-de-tu-idea.html">Hablemos de tu idea</a>
+     <a class="btn primario" href="referencias-del-sitio.html">Explorar referencias del sitio</a>
+    </div>
+   </section>
+   <section class="seccion recursos" aria-labelledby="tit-recursos">
+    <h2 id="tit-recursos">Material de práctica</h2>
+    <div class="grid album-grid">
+     <article class="album">
+      <figure class="portada">
+       <img src="Image/orques1.jpg" alt="Proyecto de interfaz inspirado en conciertos" loading="lazy" decoding="async">
+      </figure>
+      <p>Maquetas visuales creadas con recursos de la carpeta <code>Image/</code> para ensayar layouts responsivos.</p>
+     </article>
+     <article class="album">
+      <div class="media-wrapper ratio-16x9">
+       <video controls preload="metadata" poster="Image/1-8.jpg">
+        <source src="Video/Hans Zimmer - Interstellar  Imperial Orchestra.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+       </video>
+      </div>
+      <p>Clips de práctica alojados en <code>Video/</code> para analizar ritmo y sincronización multimedia.</p>
+     </article>
+     <article class="album">
+      <div class="mini-audio">
+       <span style="font-size:.75rem;letter-spacing:.5px;text-transform:uppercase;">Fragmento de prueba</span>
+       <audio controls preload="none">
+        <source src="Audio/Interstellar Medley  Imperial Orchestra.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+       </audio>
+      </div>
+      <p>Audios de referencia almacenados en <code>Audio/</code> que inspiran la creación de soundtracks personalizados.</p>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <p>&copy; 2025 Sitio de Fans de Hans Zimmer por Israel Z.S.</p>
+   <a href="#contenido-principal" class="volver-arriba" aria-label="Volver al inicio">↑</a>
+  </footer>
+  <script src="JS/app.js" defer></script>
+ </body>
+</html>

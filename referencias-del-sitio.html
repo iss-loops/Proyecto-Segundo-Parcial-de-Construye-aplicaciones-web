@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Israel Zacarias Sanchez">
+  <meta name="description" content="Explora referencias y recursos clave del proyecto web de Hans Zimmer.">
+  <link rel="icon" href="Image/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/estilo.css">
+  <title>Explorar referencias del sitio</title>
+ </head>
+ <body class="pagina-secundaria">
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+  <header class="site-header">
+   <nav class="navbar" aria-label="Navegación principal">
+    <a class="logo" href="Principal.html"><img src="Image/logo.ico" alt="Logo"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
+    <ul id="menu" class="nav-links">
+     <li><a href="Principal.html">Inicio</a></li>
+     <li><a href="biografia.html">Biografía</a></li>
+     <li><a href="contacto.html">Contacto</a></li>
+     <li><a href="discografia.html">Discografía</a></li>
+     <li><a href="info-del-desarrollador.html">Desarrollador</a></li>
+    </ul>
+   </nav>
+   <section class="sub-hero">
+    <h1>Explorar referencias del sitio</h1>
+    <p>Guía de secciones y recursos para inspirar nuevos desarrollos.</p>
+   </section>
+  </header>
+  <main id="contenido-principal">
+   <section class="seccion" aria-labelledby="tit-galeria">
+    <h2 id="tit-galeria">Secciones destacadas</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
+     <article class="album">
+      <h3>Noticias y cronología</h3>
+      <p>Referencia para tarjetas accesibles con metadatos (titular, resumen, fecha). Ideal para listar eventos o changelogs.</p>
+      <a class="btn secundario" href="Principal.html#tit-noticias">Ver ejemplo</a>
+     </article>
+     <article class="album">
+      <h3>Discografía interactiva</h3>
+      <p>Estructura de tarjetas con audio embebido y listas ordenadas; útil para catálogos o bibliotecas multimedia.</p>
+      <a class="btn secundario" href="discografia.html#tit-albumes">Visitar sección</a>
+     </article>
+     <article class="album">
+      <h3>Formulario accesible</h3>
+      <p>Formulario con validaciones básicas, etiquetas claras y avisos para retroalimentación inmediata.</p>
+      <a class="btn secundario" href="contacto.html#tit-form">Abrir formulario</a>
+     </article>
+    </div>
+   </section>
+   <section class="seccion" aria-labelledby="tit-siguientes">
+    <h2 id="tit-siguientes">Siguientes pasos</h2>
+    <p>Usa estas referencias como base para documentar componentes reutilizables. Podemos iterar agregando estilos variables, versiones temáticas o integraciones con frameworks cuando avance el portafolio.</p>
+    <div class="acciones-hero">
+     <a class="btn primario" href="hablemos-de-tu-idea.html">Proponer mejoras</a>
+     <a class="btn secundario" href="info-del-desarrollador.html">Regresar al perfil</a>
+    </div>
+   </section>
+   <section class="seccion" aria-labelledby="tit-media">
+    <h2 id="tit-media">Recursos multimedia del proyecto</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+     <article class="album">
+      <figure class="portada">
+       <img src="Image/orques1.jpg" alt="Fondo utilizado en el hero principal" loading="lazy" decoding="async">
+      </figure>
+      <p>Fondos e ilustraciones alojados en <code>Image/</code> listos para nuevos módulos visuales.</p>
+     </article>
+     <article class="album">
+      <div class="media-wrapper ratio-16x9">
+       <video controls preload="metadata" poster="Image/1-8.jpg">
+        <source src="Video/Hans Zimmer - Interstellar  Imperial Orchestra.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+       </video>
+      </div>
+      <p>Videos en <code>Video/</code> ideales para secciones dinámicas y fondos animados.</p>
+     </article>
+     <article class="album">
+      <div class="mini-audio">
+       <span style="font-size:.75rem;letter-spacing:.5px;text-transform:uppercase;">Guía sonora</span>
+       <audio controls preload="none">
+        <source src="Audio/Interstellar Medley  Imperial Orchestra.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+       </audio>
+      </div>
+      <p>Pistas en <code>Audio/</code> que ayudan a ambientar formularios, galerías o intros.</p>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <p>&copy; 2025 Sitio de Fans de Hans Zimmer por Israel Z.S.</p>
+   <a href="#contenido-principal" class="volver-arriba" aria-label="Volver al inicio">↑</a>
+  </footer>
+  <script src="JS/app.js" defer></script>
+ </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hans Zimmer | Contacto</title>
+  <link rel="icon" href="Image/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="CSS/estilo.css" />
+  <meta name="description" content="Contacto y redes sociales" />
+</head>
+<body class="pagina-contacto">
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="logo" href="Principal.html"><img src="Image/logo.ico" alt="Logo" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
+      <ul id="menu" class="nav-links">
+        <li><a href="Principal.html">Inicio</a></li>
+        <li><a href="biografia.html">Biografía</a></li>
+        <li><a class="active" href="contacto.html">Contacto</a></li>
+        <li><a href="discografia.html">Discografía</a></li>
+        <li><a href="info-del-desarrollador.html">Desarrollador</a></li>
+      </ul>
+    </nav>
+    <section class="sub-hero" style="background-image: linear-gradient(120deg,#141a28dd,#0d0f17dd), url('Image/pexels-njeromin-13392283.jpg'); background-size:cover; background-position:center;">
+      <h1>Contacto</h1>
+      <p>Conecta con el universo musical.</p>
+    </section>
+  </header>
+  <main id="contenido-principal">
+    <section class="seccion redes" aria-labelledby="tit-redes">
+      <h2 id="tit-redes">Redes Sociales</h2>
+      <ul class="lista-redes">
+        <li><a class="icon-red" target="_blank" rel="noopener" href="https://x.com/HansZimmer"><img src="Image/logo de X.jpg" alt="X" loading="lazy" decoding="async"></a></li>
+        <li><a class="icon-red" target="_blank" rel="noopener" href="https://www.facebook.com/hanszimmer" ><img src="Image/icono facebook.webp" alt="Facebook" loading="lazy" decoding="async"></a></li>
+        <li><a class="icon-red" target="_blank" rel="noopener" href="https://www.instagram.com/hanszimmer" ><img src="Image/icono instragram.png" alt="Instagram" loading="lazy" decoding="async"></a></li>
+        <li><a class="icon-red" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCJeBQabyLa_FvMxb6G67lkw"><img src="Image/icono youtube.webp" alt="YouTube" loading="lazy" decoding="async"></a></li>
+      </ul>
+    </section>
+
+    <section class="seccion formulario" aria-labelledby="tit-form">
+      <h2 id="tit-form">Escríbele un Mensaje</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required maxlength="60" placeholder="Tu nombre" />
+        </div>
+        <div class="campo">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" required placeholder="tu@correo.com" />
+        </div>
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <input id="asunto" name="asunto" type="text" required maxlength="80" placeholder="Asunto del mensaje" />
+        </div>
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <div class="campo grupo-inline">
+          <label><input type="checkbox" name="suscripcion" value="si" /> Deseo recibir novedades</label>
+        </div>
+        <div class="acciones-form">
+          <button type="submit" class="btn primario">Enviar</button>
+          <button type="reset" class="btn secundario">Limpiar</button>
+        </div>
+        <p class="aviso" aria-live="polite">Los datos enviados no se almacenan: demo educativa.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2025 Sitio de Fans de Hans Zimmer por Israel Z.S.</p>
+    <a href="#contenido-principal" class="volver-arriba" aria-label="Volver al inicio">↑</a>
+  </footer>
+  <script src="JS/app.js" defer></script>
+</body>
+</html>
